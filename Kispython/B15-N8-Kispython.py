@@ -15,6 +15,7 @@ def main(s):
             keys = re.findall(r'\((.*?)\)',j)
         values = re.findall(r'\s?(.*?)\s?<\D?|',prt)[0]
         D[values] = keys
+        print(keys)
     return D
 
 
